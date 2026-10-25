@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#18324a">
+  <meta name="description" content="مدیریت و حسابداری سردخانه سیب عبدالعزیز">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>حساب سرد خانه عبدالعزیز</title>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button class="icon-btn" id="menuBtn" aria-label="منو">☰</button>
+      <div class="brand">
+        <img id="brandImg" src="profile.jpg" alt="عبدالعزیز">
+        <div><strong>حساب سرد خانه عبدالعزیز</strong><small id="today"></small></div>
+      </div>
+      <button class="icon-btn" id="lockBtn" aria-label="قفل">🔒</button>
+    </header>
+
+    <main id="main" class="content"></main>
+
+    <nav class="bottom-nav" id="bottomNav">
+      <button data-page="dashboard">خانه</button>
+      <button data-page="coldstore">سردخانه</button>
+      <button data-page="rent">کرایه</button>
+      <button data-page="customers">مشتریان</button>
+      <button data-page="finance">مالی</button>
+      <button data-page="tools">ابزار</button>
+      <button data-page="settings">تنظیمات</button>
+    </nav>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-head"><h3 id="modalTitle"></h3><button id="modalClose">×</button></div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
